@@ -26,6 +26,10 @@ function Trimp (config) {
     config.rest = parseInt(config.rest, 10);
     config.max  = parseInt(config.max, 10);
 
+    if (config.rest > config.max) {
+        throw new TrimpException('resting heart rate can not be more than maximum heart rate.');
+    }
+
     var atheleteFactor = sex === 'male' || sex === 'm' ? 1.92 : 1.67;
     var heartbeat = {
         rest: config.rest,
