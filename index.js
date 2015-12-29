@@ -31,12 +31,17 @@ function Trimp (config) {
     }
 
     var atheleteFactor = sex === 'male' || sex === 'm' ? 1.92 : 1.67;
-    var heartbeat = {
+    var hr = {
         rest: config.rest,
         max: config.max
     }
 
-    function calculate () {
+    function calculate (heartRate, timeInMinutes) {
+        var hrr = (heartRate - hr.rest) / (hr.max - hr.rest);
+
+        var trimp = timeInMinutes * hrr * (0.64 * (Math.exp(atheleteFactor * hrr)));
+
+        return trimp;
     }
 
     return {
