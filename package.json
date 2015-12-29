@@ -14,7 +14,7 @@
     "trimp",
     "running"
   ],
-  "author": "Mohammad Khan",
+  "author": "Mohammad Khan <mohammad.khan@gmx.us>",
   "license": "The MIT License (MIT)",
   "bugs": {
     "url": "https://github.com/beeplove/node-trimp/issues"
