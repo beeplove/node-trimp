@@ -18,6 +18,10 @@ function Trimp (config) {
         throw new TrimpException('rest (resting heartbeat must be an integer');
     }
 
+    if (config.max != parseInt(config.max, 10)) {
+        throw new TrimpException('rest (maximum heartbeat must be an integer');
+    }
+
     var atheleteFactor = sex === 'male' || sex === 'm' ? 1.92 : 1.67;
     var heartbeat = {
         rest: config.rest,
