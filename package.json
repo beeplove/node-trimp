@@ -1,0 +1,22 @@
+{
+  "name": "trimp",
+  "version": "0.0.1",
+  "description": "Training Impulse (trimp) based on heart rate, which often referred as TRIMP^exp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeplove/node-trimp.git"
+  },
+  "keywords": [
+    "trimp",
+    "running"
+  ],
+  "author": "Mohammad Khan",
+  "license": "The MIT License (MIT)",
+  "bugs": {
+    "url": "https://github.com/beeplove/node-trimp/issues"
+  }
+}
