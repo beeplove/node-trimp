@@ -1,6 +1,6 @@
 {
   "name": "trimp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Training Impulse (trimp) based on heart rate, which often referred as TRIMP^exp",
   "main": "index.js",
   "scripts": {
