@@ -23,6 +23,9 @@ function Trimp (config) {
         throw new TrimpException('maximum heartbeat (max) must be a positive integer.');
     }
 
+    config.rest = parseInt(config.rest, 10);
+    config.max  = parseInt(config.max, 10);
+
     var atheleteFactor = sex === 'male' || sex === 'm' ? 1.92 : 1.67;
     var heartbeat = {
         rest: config.rest,
