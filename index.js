@@ -14,7 +14,7 @@ function Trimp (config) {
         throw new TrimpException('sex can be only male, female, m or f');
     }
 
-    if (config.rest !== parseInt(config.rest)) {
+    if (config.rest != parseInt(config.rest, 10)) {
         throw new TrimpException('rest (resting heartbeat must be an integer');
     }
 
