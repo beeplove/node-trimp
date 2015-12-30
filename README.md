@@ -8,8 +8,8 @@ Training Impulse (trimp) based on heart rate, which often referred as TRIMP^exp.
 
 ```javascript
 var Trimp = require('trimp')({sex: 'male', rest: 55, max: 194});
-var hr = 135;
-var duration = 60; // minutes
+var hr = 135;       // workout perfomed at this heart rate
+var duration = 60;  // minutes
 var trimp = Trimp.calcuate(hr, duration);
 console.log("Total TRIMP for this workout is: " + trimp);
 ```
